@@ -1,1 +1,24 @@
+title: 我的技术博客
+description: 整理各种计算机知识
+
+# 项目站点（非 username.github.io 仓库）必须带仓库名作为 baseurl
+url: "https://sewoder.github.io"
+baseurl: "/my-blog"
+
 theme: jekyll-theme-cayman
+
+markdown: kramdown
+permalink: /posts/:title:output_ext
+
+# Cayman 主题只有 default 布局，统一套用以获得主题样式
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
